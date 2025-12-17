@@ -17,3 +17,21 @@ def get_purchase_info(): # Convert input when necessary
     price = int(input("What is the price?\n"))
     quantity = int(input("How many do you want?\n"))
     return item, price, quantity
+# Only get input if NOT testing
+if not TESTING:
+    item, price, quantity = get_purchase_info()
+
+# Calculate using the input values (NOT hardcoded!)
+subtotal = price*quantity
+tax_rate = 0.095 #This is slightly different from the review. The tax multiplier is stored into a variable.
+tax = tax_rate*subtotal
+total = subtotal + tax
+rounded_total = round(total, 2)
+
+# Print statements
+print("--------------------------")
+print(f" Dragon Egg: ")
+print("--------------------------")
+# TODO Print subtotal
+# TODO Print tax# TODO Print total.
+print("\nThank you for shopping at\nThe Peculiar Emporium!")
