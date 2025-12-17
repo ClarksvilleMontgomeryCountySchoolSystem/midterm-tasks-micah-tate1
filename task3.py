@@ -30,8 +30,8 @@ rounded_total = round(total, 2)
 
 # Print statements
 print("--------------------------")
-print(f" Dragon Egg: ")
+print(f" {item}")
 print("--------------------------")
-# TODO Print subtotal
-# TODO Print tax# TODO Print total.
+print(f"Subtotal: ${subtotal}")
+print(f" Tax: ${tax}")print(f" Total: ${total}")
 print("\nThank you for shopping at\nThe Peculiar Emporium!")
