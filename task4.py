@@ -31,7 +31,7 @@ print(f"Speed: {speed} mph")
 
 # Snippet 6:
 level = 5
-if level < 5:
+if level == 5:
     print("You reached level 5!")
 
 
